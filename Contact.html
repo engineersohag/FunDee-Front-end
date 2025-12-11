@@ -1,75 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
     <!-- == bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- == bootstrap icon link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- === font-awesome icon link ===  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- == custom css link -->
     <link rel="stylesheet" href="style.css">
-  
+    
     <style>
-        body {
-            background: linear-gradient(90deg, #4A9CD2, #E58D50);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .contact-card {
-            width: 100%;
-            max-width: 600px;
-            padding: 30px;
-            border-radius: 15px;
-            background: #ffffff;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        .contact-card h3 {
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        .btn-custom {
-            width: 100%;
-            font-weight: 600;
-        }
+       
+        
     </style>
 </head>
 <body>
+    <!-- === nav st -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" style="background: linear-gradient(90deg, #4A9CD2, #E58D50);">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/1.png" alt="Logo Text">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mb-2 mb-lg-0 btn-home">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-live">
+                            <a class="nav-link " aria-current="page" href="live.html">Live</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-featured">
+                            <a class="nav-link " aria-current="page" href="featured.html">Featured</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-popular">
+                            <a class="nav-link " aria-current="page" href="popular.html">Popular</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-about">
+                            <a class="nav-link " aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-contact">
+                            <a class="nav-link " aria-current="page" href="Contact.html">Contact</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="login-grupe">
+                        <button class="btn btn-login btn-danger" type="submit"><a style="text-decoration: none; color: #fff; font-size: 18px;" href="login.html">Login</a></button>
+                        <button class="btn btn-signup btn-success" type="submit"><a style="text-decoration: none; color: #fff; font-size: 18px;" href="register.html">Sign Up</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!-- === nav en -->
 
-    <div class="contact-card">
-        <h3>Contact Us</h3>
-        <form>
-            <div class="mb-3">
-                <label class="form-label">Your Name</label>
-                <input type="text" class="form-control" placeholder="Enter your name" />
+    <!-- -- Main Content -- -->
+    <main class="my-5 text-white">
+        <div class="container">
+            <!-- Contact Info Section -->
+            <div class="row justify-content-between gap-1 mb-5 contact-info">
+                <div class="boxs custom-border col-md-3 py-4 d-flex justify-content-center align-items-center flex-column mb-4" style="background: linear-gradient(90deg, #4A9CD2, #E58D50); padding: 10px;">
+                    <h5 class="text-warning">Address</h5>
+                    <p>BD</p>
+                </div>
+                <div class="custom-border col-md-3 py-4 d-flex justify-content-center align-items-center flex-column mb-4" style="background: linear-gradient(90deg, #4A9CD2, #E58D50); padding: 10px;">
+                    <h5 class="text-warning">Email</h5>
+                    <p>Kanalelouisa@gmail.com</p>
+                </div>
+                <div class="custom-border col-md-3 py-4 d-flex justify-content-center align-items-center flex-column mb-4" style="background: linear-gradient(90deg, #4A9CD2, #E58D50); padding: 10px;">
+                    <h5 class="text-warning">Phone</h5>
+                    <div class="d-flex justify-content-center">
+                        <p><strong>Service: </strong> +59995676717</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Your Email</label>
-                <input type="email" class="form-control" placeholder="Enter your email" />
+            <!-- Contact Form Section -->
+            <div class="custom-border row justify-content-center p-5" style="background: linear-gradient(90deg, #4A9CD2, #E58D50);">
+                <div class="col-lg-6 col-md-8">
+                    <div class="contact-form">
+                        <h4 class="mb-4 text-center text-black">Contact Us</h4>
+                        <form action="https://kanalelouisa.com/contact-submit" method="POST">
+                            <input type="hidden" name="_token" value="HHenXNFAHR0Sx04wYNnV1oNSUnMRgTbI0VeNqVM2" autocomplete="off">
+                            <!-- Name -->
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" name="name" class="form-control custom-border" placeholder="Enter your Name" required>
+                            </div>
+
+                            <!-- Email & Phone -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" name="email" class="form-control custom-border" placeholder="Enter your Email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="text" name="phone" class="form-control custom-border" placeholder="Enter Phone Number">
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea rows="5" name="message" class="form-control custom-border" placeholder="Enter your Message" required></textarea>
+                            </div>
+
+                            <!-- Checkbox & Button -->
+                            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+                                <div class="form-check mb-3 mb-md-0">
+                                    <input class="form-check-input" type="checkbox" id="agree" required>
+                                    <label class="form-check-label" for="agree">
+                                        I agree with <a href="#" class="text-decoration-none text-warning">Terms of Use</a> and <a href="#" class="text-decoration-none text-warning">Privacy Policy</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn text-bg-primary  mt-2 mt-md-0">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
+        </div>
+    </main>
 
-            <div class="mb-3">
-                <label class="form-label">Subject</label>
-                <input type="text" class="form-control" placeholder="Write subject" />
+    <!-- === footer start -->
+     <div class="container">
+        <div class="row">
+            <div class="footer mt-5">
+                <p class="text-center" style="background: #FF00FF; box-shadow: 3px 3px 3px pink, -3px -3px 3px pink; border-radius: 12px; color: #fff; padding: 20px ; font-size: 18px; font-weight: 600;">© 
+                2025 FunDee. All rights reserved.</p>
             </div>
-
-            <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea rows="4" class="form-control" placeholder="Write your message..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-custom">Send Message</button>
-        </form>
-    </div>
-
+        </div>
+     </div>
+    <!-- === footer end -->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -12,24 +12,18 @@
     <!-- == custom css link -->
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            min-height: 100vh;
-            background: linear-gradient(90deg, #4A9CD2, #E58D50);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+        
         .about-card {
             width: 100%;
-            max-width: 800px;
+            /* max-width: 800px; */
+            height: 70vh;
             padding: 40px;
-            border-radius: 15px;
-            background: #ffffff;
+            border-radius: 15px;    
+            color: #050505;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         .about-title {
-            text-align: center;
+            text-align: start;
             font-weight: 700;
             margin-bottom: 25px;
             font-size: 32px;
@@ -37,7 +31,7 @@
         .about-text {
             font-size: 16px;
             line-height: 1.7;
-            color: #444;
+            color: #fefefe;
             margin-bottom: 20px;
         }
         .highlight {
@@ -47,9 +41,47 @@
     </style>
 </head>
 <body>
+     <nav class="navbar navbar-expand-lg">
+            <div class="container" style="background: linear-gradient(90deg, #4A9CD2, #E58D50);">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/1.png" alt="Logo Text">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mb-2 mb-lg-0 btn-home">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-live">
+                            <a class="nav-link " aria-current="page" href="live.html">Live</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-featured">
+                            <a class="nav-link " aria-current="page" href="featured.html">Featured</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-popular">
+                            <a class="nav-link " aria-current="page" href="popular.html">Popular</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-about">
+                            <a class="nav-link " aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-contact">
+                            <a class="nav-link " aria-current="page" href="Contact.html">Contact</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="login-grupe">
+                        <button class="btn btn-login btn-danger" type="submit"><a style="text-decoration: none; color: #fff; font-size: 18px;" href="login.html">Login</a></button>
+                        <button class="btn btn-signup btn-success" type="submit"><a style="text-decoration: none; color: #fff; font-size: 18px;" href="register.html">Sign Up</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-    <div class="about-card">
+    <div class="about-card container mt-5 mb-5" style="background: linear-gradient(90deg, #4A9CD2, #E58D50);">
         <h2 class="about-title">About Us</h2>
+        <div class="border mb-4" style="width: 15%;"></div>
         
         <p class="about-text">
             Welcome to our website! We are dedicated to providing high-quality services and useful information to our users. Our mission is to create a smooth and easy digital experience for everyone.
@@ -61,6 +93,19 @@
 
         <p class="about-text">
             We believe that every user deserves the best experience — and we work every day to make that happen. Thank you for visiting us!
+        </p>
+        <p class="about-text">
+            Elousia Television offers the ultimate streaming experience—bringing your favorite movies, shows, and live events directly to you anytime, anywhere. Whether you're at home, at work, or on the go, our platform ensures you are always entertained.
+
+            Enjoy an extensive library of content, including:
+
+            24/7 Live Broadcast: Stay connected with continuous live streaming of your favorite channels and events.
+            Classic Movies: Revisit timeless cinematic masterpieces from around the world.
+            Trending TV Series: Catch up with the latest episodes of popular TV shows.
+            Exclusive Events: Access special screenings, concerts, and live performances.
+            Our user-friendly platform is designed to provide seamless streaming with high-quality video and sound. With easy navigation and personalized recommendations, Elousia Television ensures that you always find something you love.
+
+            At Elousia Television, we believe in bringing the best entertainment experience to your fingertips, making every moment enjoyable and memorable.
         </p>
     </div>
 
