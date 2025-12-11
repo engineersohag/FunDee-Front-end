@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    /* overflow: hidden; */
+    background: linear-gradient(
+                to right,
+                #FF8000 0%, #FF8000 16.666%,
+                #0000FF 16.666%, #0000FF 33.333%,
+                #FF00FF 33.333%, #FF00FF 50%,
+                #00FFFF 50%, #00FFFF 66.666%,
+                #FF0000 66.666%, #FF0000 83.333%,
+                #000000 83.333%, #000000 100%
+            );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-brand img{
+    width: 180px;
+
+}
+.btn-home { background:#FFA500; }
+.btn-live { background:#001DFF; }
+.btn-featured { background:#FF0000; }
+.btn-popular { background:#2EE6E6; }
+.btn-about { background:#FF00FF; }
+.btn-contact { background:#FFA000; }
+
+.nav-item {
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.nav-link {
+    color: white !important;
+}
+
+.login-grupe {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.live-now {
+    width: 135px;
+    border-radius: 15px;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: rgb(236, 6, 6);
+    color: #fff;
+}
+
+.border {
+    width: 25%;
+    color: #08f0f0;
+}
+
+#videoCarousel video{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;  
+}
+
+.box img{
+    width: 100%;
+    border-radius: 15px;
+}
+.img-box{
+  display: inline-block;
+  padding: 6px; /* border thickness */
+  border-radius: 12px;
+  background: linear-gradient(90deg, #00f5ff, #ffb703);
+}
+
+.img-box img{
+  display: block;
+  border-radius: 8px;
+}
+.custom-border {
+    padding: 10px;
+    border: 4px solid;
+    border-radius: 12px !important;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(90deg, #01d8df, #ffb703);
+    background: linear-gradient(90deg, #4A9CD2, #E58D50);
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 413px){
+    #videoCarousel video{
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;  
+    }
+
+    .box h5, 
+    .box p {
+        font-size: 12px;
+    }
+
+}
