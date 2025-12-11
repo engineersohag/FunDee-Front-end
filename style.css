@@ -111,9 +111,6 @@ body{
 
 }
 
-
-
-
 /* login pages */
 .login {
     display: flex;
@@ -122,4 +119,41 @@ body{
     width: 50%;
     height: 100vh;
     margin: auto;
+}
+
+.boxs {
+    position: relative;
+    display: inline-block;
+    padding: 6px; /* border thickness */
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00f5ff, #ffb703);
+}
+.boxs .fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #fff;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.boxs .fa-eye {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 25px;
+    color: #fff;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.boxs span {
+    position: absolute;
+    bottom: 15px;
+    left: 60px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.8;
+    cursor: pointer;
 }
