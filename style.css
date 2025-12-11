@@ -163,7 +163,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    padding-right: 20%;
+    padding-right: 5%;
 }
 
 /* Big Slide */
@@ -174,7 +174,7 @@ body{
 
 .slide-big img {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -210,12 +210,12 @@ body{
     width: 35%;
     position: absolute;
     right: -10%;
-    top: 15%;
+    top: 8%;
 }
 
 .slide-small img {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     border-radius: 12px;
     object-fit: cover;
 }
