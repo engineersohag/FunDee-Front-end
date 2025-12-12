@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunDee</title>
+    <!-- == bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- == bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- === font-awesome icon link ===  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- == custom css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====== NavBar start ====== -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container custom-border">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/1.png" alt="Logo Text">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mb-2 mb-lg-0 btn-home">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-live">
+                            <a class="nav-link " aria-current="page" href="live.html">Live</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-featured">
+                            <a class="nav-link " aria-current="page" href="featured.html">Featured</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-popular">
+                            <a class="nav-link " aria-current="page" href="popular.html">Popular</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-about">
+                            <a class="nav-link " aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 btn-contact">
+                            <a class="nav-link " aria-current="page" href="Contact.html">Contact</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="login-grupe">
+                        <button class="btn btn-login btn-danger" type="submit"><a style="text-decoration: none; color: #fff; font-size: 18px;" href="login.html">Login</a></button>
+                        <button class="btn btn-signup btn-success" type="submit"><a style="text-decoration: none; color: #fff; font-size: 18px;" href="register.html">Sign Up</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ====== NavBar end  ====== -->
+
+        <!-- ==== profile start ==== -->
+        <div class="container custom-border mt-5 mb-5">
+            <div class="row">
+                <div class="setting col-lg-3 custom-border m-5 p-3 ">
+                    <h3>Settings</h3>
+                    <div class="setting-menu">
+                        <ul class="nav-item">
+                            <div class="hover"><li class="nav-link"><i class="fa-solid fa-user"></i><a href="profile.html"> Profile</a></li></div>
+                            <div class="hover"><li class="nav-link"><i class="fa-brands fa-web-awesome"></i> <a href="">Subscription</a></li></div>
+                            <div class="hover"><li class="nav-link"><i class="fa-solid fa-money-bill"></i><a href="#"> Payments</a></li></div>
+                            <div class="hover"><li class="nav-link"><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#"> Logout</a></li></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile col-lg-7 custom-border m-5 p-3">
+                    <h3>Profile</h3>
+                    <p>Manage your account</p>
+
+                    <div class="user">
+                        <img src="images/user.png" alt="User Image" class="mb-3">
+                        <button class="btn-user btn-secondary"><i class="fa-regular fa-pen-to-square"></i>Change Photo</button>
+                    </div>
+
+                    <form class="row g-3 mt-3">
+                        <div class="mb-3 col-lg-5">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3 col-lg-11">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Profile</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ==== profile end ==== -->
+
+        <!-- === footer start -->
+        <div class="container">
+            <div class="row">
+                <div class="footer mt-5">
+                    <p class="text-center" style="background: #FF00FF; box-shadow: 3px 3px 3px pink, -3px -3px 3px pink; border-radius: 12px; color: #fff; padding: 20px ; font-size: 18px; font-weight: 600;">© 
+                    2025 FunDee. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- === footer end -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
