@@ -333,3 +333,44 @@ a{
     font-weight: bold;
     border: none;
 }
+
+.history h3 {
+    font-weight: bold;
+    padding-bottom: 10px;
+    width: fit-content;
+    border-bottom: 2px solid white;
+}
+.date-divider {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.date-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #f1f4f2; /* line color */
+  z-index: 1;
+}
+
+.date-divider span {
+  background: #000;   /* background color */
+  color: #e7ebe9;     /* text color */
+  padding: 5px 30px;
+  font-size: 14px;
+  border-radius: 12px; 
+  position: relative;
+  z-index: 2;
+}
+
+.today .v{
+    margin-left: 20px;
+    border-right: 2px solid #ffffff;
+}
+.today .f{
+    margin-left: 20px;
+}

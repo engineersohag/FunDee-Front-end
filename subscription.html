@@ -67,36 +67,61 @@
                     <div class="setting-menu">
                         <ul class="nav-item">
                             <div class="hover"><li class="nav-link"><i class="fa-solid fa-user"></i><a href="profile.html"> Profile</a></li></div>
-                            <div class="hover"><li class="nav-link"><i class="fa-brands fa-web-awesome"></i> <a href="subscription.html">Subscription</a></li></div>
+                            <div class="hover"><li class="nav-link"><i class="fa-brands fa-web-awesome"></i> <a href="">Subscription</a></li></div>
                             <div class="hover"><li class="nav-link"><i class="fa-solid fa-clock-rotate-left"></i><a href="history.html"> History</a></li></div>
                             <div class="hover"><li class="nav-link"><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="index.html"> Logout</a></li></div>
                         </ul>
                     </div>
                 </div>
-                <div class="profile col-lg-7 custom-border m-5 p-3">
-                    <h3>Profile</h3>
-                    <p>Manage your account</p>
-
-                    <div class="user">
-                        <img src="images/user.png" alt="User Image" class="mb-3">
-                        <button class="btn-user btn-secondary"><i class="fa-regular fa-pen-to-square"></i>Change Photo</button>
+                <div class="subscription col-lg-7 custom-border m-5 p-3">
+                    <h2 class="text-white border-bottom w-25">Subscription</h2>
+                    <p class="text-white">Manage your Subscription</p>
+                    <h3 class="text-white">Choose  Plans:</h3>
+                    <p class="text-white">What does premium include?</p>
+                    
+                    <div class="d-flex gap-3">
+                        <div>
+                            <input type="radio">
+                            <label class="text-white">Watch any movie and show.</label>
+                        </div>
+                        <div>
+                            <input type="radio">
+                            <label class="text-white">Watch full length live sessions.</label>
+                        </div>
                     </div>
 
-                    <form class="row g-3 mt-3">
-                        <div class="mb-3 col-lg-5">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    <div class="plan row mt-4">
+                        <div class="card col-lg-5 m-3 p-3 custom-border text-center" >
+                            <h4 class="text-white">Basic Plan</h4>
+                            <p class="text-white">$9.99 / month</p>
+                            <ul class="list-unstyled text-white">
+                                <li>Access to basic content</li>
+                                <li>Standard video quality</li>
+                                <li>Limited device support</li>
+                            </ul>
+                            <button class="btn btn-primary">Subscribe</button>
                         </div>
-                        <div class="mb-3 col-lg-6">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        <div class="card col-lg-5 m-3 p-3 custom-border text-center" >
+                            <h4 class="text-white">Standard Plan</h4>
+                            <p class="text-white">$14.99 / month</p>
+                            <ul class="list-unstyled text-white">
+                                <li>Access to all content</li>
+                                <li>HD video quality</li>
+                                <li>Multiple device support</li>
+                            </ul>
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div> 
+                        <div class="card col-lg-5 m-3 p-3 custom-border text-center" >
+                            <h4 class="text-white">Premium Plan</h4>
+                            <p class="text-white">$19.99 / month</p>
+                            <ul class="list-unstyled text-white">   
+                                <li>Access to all content</li>
+                                <li>Ultra HD video quality</li>
+                                <li>Unlimited device support</li>
+                            </ul>
+                            <button class="btn btn-primary">Subscribe</button>
                         </div>
-                        <div class="mb-3 col-lg-11">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Update Profile</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
